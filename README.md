@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/t13cedesign/Article-preview-component-challenge-on-Frontend-Mentor]
-- Live Site URL: [https://t13cedesign.github.io/Article-preview-component-challenge-on-Frontend-Mentor/#]
+- Solution URL: [https://github.com/t13cedesign/Frontend-Mentor---Four-card-feature-section-solution]
+- Live Site URL: [https://t13cedesign.github.io/Frontend-Mentor---Four-card-feature-section-solution/]
 
 ## My process
 
