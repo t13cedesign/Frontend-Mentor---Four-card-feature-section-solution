@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  --primary01: hsl(234, 12%, 34%);
+  --primary02: hsl(229, 6%, 66%);
+  --bG-color: hsl(0, 0%, 98%);
+  --firstCard: hsl(180, 62%, 55%);
+  --secondCard: hsl(0, 78%, 62%);
+  --thirdCard: hsl(34, 97%, 64%);
+  --fourthCard: hsl(212, 86%, 64%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*:before,
+*:after, h1, h2, h3, h4, h5, h4 , h5, h6 {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--bG-color);
+  color: var(--primary01);
+  font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8.5rem 8.5%;
+  max-width: 1110px; 
+}
+
+/* CONTAINER__HEADER */
+.container__header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  margin-top: 1.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+
+.container__header > p {
+  font-size: 1.5rem;
+  color: var(--primary02);
+  line-height: 1.5;
+  padding: 3rem 0 8rem 0;
+}
+
+.container__cards {
+  display: grid;
+  grid-template: 'first' 1fr 'second' 1fr 'third' 1fr 'fourth' 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+#supervisor {
+  grid-area: first;
+}
+
+#team-builder {
+  grid-area: second;
+}
+
+#karma {
+  grid-area: third;
+}
+
+#calculator {
+  grid-area: fourth;
+}
+
+/* CONTAINER__CARDS */
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+
+  box-shadow: 0 10px 20px 0 rgb(216, 226, 236);
+}
+
+.card__inner {
+  display: flex;
+  flex-direction: column;
+
+  padding: 3.2rem;
+}
+
+#supervisor .card__inner {
+  box-shadow: 0 4px 0 0 var(--firstCard) inset;
+}
+
+#team-builder .card__inner {
+  box-shadow: 0 4px 0 0 var(--secondCard) inset;
+}
+
+#karma .card__inner {
+  box-shadow: 0 4px 0 0 var(--thirdCard) inset;
+}
+
+#calculator .card__inner {
+  box-shadow: 0 4px 0 0 var(--fourthCard) inset;
+}
+
+h3 {
+  font-size: 2.0rem;
+  letter-spacing: -0.2px;
+}
+
+.card__info > p {
+  font-size: 1.3rem;
+  line-height: 2;
+  color: var(--primary02);
+  padding: 1.5rem 0 3.5rem 0;
+}
+
+.card img {
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 720px) {
+  .container__cards {
+    grid-template:
+      "first second" 1fr
+      "third fourth" 1fr
+      /1fr 1fr;
+  }
+
+  .container__header{
+    max-width: 50.5rem;
+  }
+
+  h1, h2 {
+    font-size: 3.6rem;
+  }
+}
+
+  @media (min-width: 1024px) {
+  .container__cards {
+    grid-template: 
+    ". second ." 1fr
+    "first second fourth" 1fr
+    "first third fourth" 1fr
+    ". third ." 1fr
+    /1fr 1fr 1fr; 
+  }
+}
+
+
+
+
+
+
